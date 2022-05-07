@@ -1,0 +1,50 @@
+body{
+  font-family: Verdana;
+  font-size: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  justify-content: center;
+}
+
+#heading {
+  background-color: #343330;
+font-family: Verdana;
+font-size: 130%;
+color: rgb(253, 253, 253);
+}
+
+.main{
+  display: flex;
+  flex-direction: row;
+}
+
+footer {
+  background-color: #343330;
+  text-align: center;
+}
+
+#navigationmenu{
+  width: 15%;
+  background-color: rgb(134, 122, 101);
+  padding: 2rem;
+}
+
+.navigationlist{
+  list-style-type: none;
+  padding: 0%;
+}
+
+#headshot {
+  width: 20%;
+  height: 50%;
+ border-radius: 46%;
+ border: 3px solid rgb(238, 201, 201); 
+}
+
+.content{
+  padding: 2rem; 
+}
