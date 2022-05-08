@@ -3,6 +3,7 @@ body{
   font-size: 90%;
   display: flex;
   flex-direction: column;
+  background-image: white url(istockphoto-1208585275-612x612.jpg);
 }
 
 header {
