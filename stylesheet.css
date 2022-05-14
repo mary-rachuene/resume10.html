@@ -23,15 +23,16 @@ color: rgb(253, 253, 253);
   flex-direction: row;
 }
 
-footer {
-  background-color: #343330;
-  text-align: center;
-}
-
 #navigationmenu{
   width: 15%;
   background-color: rgb(134, 122, 101);
   padding: 2rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    .content0{
+      display: block;
+    } 
 }
 
 .navigationlist{
@@ -48,4 +49,16 @@ footer {
 
 .content{
   padding: 2rem; 
+  background-color: rgb(209, 203, 171);
+}
+
+@media screen and (max-width: 400px){
+  .content{
+    display: block;
+  } 
+}
+ 
+footer {
+  background-color: #343330;
+  text-align: center;
 }
