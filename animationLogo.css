@@ -23,9 +23,12 @@ header {
   width: 100%;
 }
 
+
+
 @media (max-width: 1000px) {
   .main {
     flex-flow: column;
+    width: 100%;
   }
 }
 
@@ -54,6 +57,13 @@ header {
   padding: 0%;
 }
 
+
+@media (max-width: 450px) {
+  .navigationlist {
+    font-size: small;
+  }
+}
+
 #headshot {
   width: 20%;
   height: 50%;
@@ -68,7 +78,13 @@ header {
   color: white;
 }
 
-@media (min-width: 450px) {
+@media (max-width: 450px) {
+  .content {
+    font-size: small;
+  }
+}
+
+@media (min-width: 650px) {
   .content {
     background-image:
       url(https://images.unsplash.com/photo-1518128160709-c575457dafa5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
@@ -80,22 +96,25 @@ header {
   }
 
   @keyframes backgroundimg {
-  0% {
-    background-position: 0% 50%;
-}
-50% {
-    background-position: 100% 50%;
-}
-}
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+  }
 }
 
 footer {
+  
   background-color: #343330;
   text-align: center;
+  color: white;
 }
 
-.Linkedin {
-  width: 70px;
+#LinkedIn {
+  max-width: 30%;
   height: auto;
   display: flex;
   flex-direction: column;
