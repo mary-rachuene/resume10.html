@@ -23,8 +23,6 @@ header {
   width: 100%;
 }
 
-
-
 @media (max-width: 1000px) {
   .main {
     flex-flow: column;
@@ -55,6 +53,7 @@ header {
 .navigationlist {
   list-style-type: none;
   padding: 0%;
+  font-style: bold;
 }
 
 
@@ -107,17 +106,9 @@ header {
 }
 
 footer {
-  
   background-color: #343330;
   text-align: center;
   color: white;
-}
-
-#LinkedIn {
-  max-width: 30%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
 }
 
 .icon {
