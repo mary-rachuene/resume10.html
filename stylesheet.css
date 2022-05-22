@@ -10,7 +10,7 @@ header {
   justify-content: center;
 }
 
-#heading {
+#pageHeader {
   background-color: #343330;
 font-family: Verdana;
 font-size: 130%;
@@ -33,7 +33,16 @@ color: rgb(253, 253, 253);
   background-color: rgb(211, 158, 154);
   padding: 2rem;
   font-size: medium;
+  animation-name: navanimation;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
   }
+
+  @keyframes navanimation {
+    0% {background-color: rgb(211, 158, 154)}
+    100% {background-color: rgb(243, 215, 220);}
+  } 
 
 .navigationlist{
   list-style-type: none;
@@ -67,3 +76,4 @@ footer {
   background-color: #343330;
   text-align: center;
 }
+
