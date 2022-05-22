@@ -4,38 +4,46 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Resume8</title>
+   <title>Resume10</title>
 </head>
 
 <style>
-body {
-display: grid;
-      grid-template-areas: 
-        "header header header"
-        "navigationmenu"
-        "footer footer footer";
+   body {
+      display: grid;
+      grid-template-areas:
+         "header header header"
+         "navigationmenu"
+         "footer footer footer";
       grid-template-rows: 60px 1fr 60px;
       grid-template-columns: 20% 1fr 15%;
       grid-gap: 10px;
       height: 100vh;
       margin: 0;
-      }
-    header, footer, content, Nav {
+   }
+
+   header,
+   footer,
+   content,
+   Nav {
       padding: 20px;
-    }
-    #pageHeader {
+   }
+
+   #pageHeader {
       grid-area: header;
-    }
-    #pageFooter {
+   }
+
+   #pageFooter {
       grid-area: footer;
-    }
-    #bottom { 
-      grid-area: content;      
-      }
-    #MainNavigation { 
-      grid-area: nav; 
-      }
-   </style> 
+   }
+
+   #bottom {
+      grid-area: content;
+   }
+
+   #MainNavigation {
+      grid-area: nav;
+   }
+</style>
 </body>
 
 </html>
@@ -45,7 +53,7 @@ display: grid;
 
    <title>Resume1</title>
 
-   <link rel="stylesheet" type="text/css" href="stylesheet.css">
+   <link rel="stylesheet" type="text/css" href="animationLogo.css">
 
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -56,9 +64,9 @@ display: grid;
    <header id="pageHeader">
       <picture>
 
-         <source srcset="prince-akachi-small" - media="(max-width: 600px)">
-         <source srcset="prince-akachi-medium" media="(max-width: 1500px)">
-         <source srcset="prince-akachi">
+         <source srcset="prince-akachi-small.jpg" - media="(max-width: 600px)">
+         <source srcset="prince-akachi-medium.jpg" media="(max-width: 1500px)">
+         <source srcset="prince-akachi.jpg">
          <img src="prince-akachi.jpg" alt="headphoto" id="headshot">
       </picture>
       <h1>Mary Rachuene</h1>
@@ -148,15 +156,15 @@ display: grid;
          <img class="icons" src="./Popular-facebook-Logo-png - Copy.png" alt="facebook-logo" width="70" height="auto">
       </a>
 
-      <a href="https://www.linkedin.com/in/mary-otlile-rachuene-4a06b517b?trk=public_profile_browsemap&originalSubdomain=za"
-         target="_blank">
-         <img class="icons" src="./Linkedin-logo-on-transparent-Background-PNG-.png" alt="Linkedin-logo" width="70"
-            height="auto">
-      </a>
+      <div class="Linkedin">
+         <a href="https://www.linkedin.com/in/mary-otlile-rachuene-4a06b517b?trk=public_profile_browsemap&originalSubdomain=za"
+            target="_blank"> <img class="icons" src="./Linkedin-logo-on-transparent-Background-PNG-.png"
+               alt="LinkedIn logo">
+         </a>
 
-      <a href="https://mail.google.com/mail/u/0/" target="_blank">
-         <img class="icons" src="Gmail-logo-design-on-transparent-background-PNG.png" alt="gmail-logo" width="70" height="76">
-      </a>
+         <a href="https://mail.google.com/mail/u/0/" target="_blank">
+            <img class="icon" src="./l" alt="gmail-logo" width="70" height="76">
+         </a>
 
    </ul>
 
