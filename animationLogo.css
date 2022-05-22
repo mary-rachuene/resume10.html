@@ -29,16 +29,6 @@ header {
   }
 }
 
-#navigationmenu {
-  background-color: rgb(211, 158, 154);
-  padding: 2rem;
-  font-size: medium;
-  animation-name: navanimation;
-  animation-duration: 60s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-}
-
 @keyframes navanimation {
   0% {
     background-color: rgb(211, 158, 154)
@@ -47,6 +37,16 @@ header {
   100% {
     background-color: rgb(235, 100, 125);
   }
+}
+
+#navigationmenu {
+  background-color: rgb(211, 158, 154);
+  padding: 2rem;
+  font-size: medium;
+  animation-name: navanimation;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
 }
 
 .navigationlist {
@@ -68,7 +68,7 @@ header {
   color: white;
 }
 
-@media (max-width: 450px) {
+@media (min-width: 450px) {
   .content {
     background-image:
       url(https://images.unsplash.com/photo-1518128160709-c575457dafa5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
@@ -80,14 +80,13 @@ header {
   }
 
   @keyframes backgroundimg {
-    from {
-      transform: translateX(0px);
-    }
-
-    to {
-      transform: translateX(10px);
-    }
-  }
+  0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+}
 }
 
 footer {
