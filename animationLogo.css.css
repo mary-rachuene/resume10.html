@@ -1,4 +1,4 @@
-body{
+body {
   font-family: Verdana;
   font-size: 90%;
   display: flex;
@@ -8,43 +8,52 @@ body{
 header {
   text-align: center;
   justify-content: center;
+
 }
 
 #pageHeader {
   background-color: #343330;
-font-family: Verdana;
-font-size: 130%;
-color: rgb(253, 253, 253);
+  font-family: Verdana;
+  font-size: 130%;
+  color: rgb(253, 253, 253);
 }
 
-.main{
+.main {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
 
-@media (max-width: 1000px){
-  .main{
+@media (max-width: 1000px) {
+  .main {
     flex-flow: column;
   }
 }
 
-#navigationmenu{
+@media (max-width: 650px) {
+  #navigationmenu {
+    background-image: NavBackground url(https://images.unsplash.com/photo-1472289065668-ce650ac443d2?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869);
+    background-color: rgb(0, 0, 0);
+    background-repeat: repeat-x;
+  }
+}
+
+  @keyframes NavBackground {
+    from {transform: translateX(0px);}
+    to {transform: translateX(10px);}
+  }
+
+#navigationmenu {
   background-color: rgb(211, 158, 154);
   padding: 2rem;
   font-size: medium;
-  animation-name: navanimation;
-  animation-duration: 60s;
-  animation-iteration-count: infinite;
+  animation-name: NavBackground;
+  animation-duration: 3s;
+  animation-iteration-count: initial;
   animation-timing-function: ease-in;
-  }
+}
 
-  @keyframes navanimation {
-    0% {background-color: rgb(211, 158, 154)}
-    100% {background-color: rgb(243, 215, 220);}
-  } 
-
-.navigationlist{
+.navigationlist {
   list-style-type: none;
   padding: 0%;
 }
@@ -52,28 +61,29 @@ color: rgb(253, 253, 253);
 #headshot {
   width: 20%;
   height: 50%;
- border-radius: 46%;
- border: 3px solid rgb(238, 201, 201); 
+  border-radius: 46%;
+  border: 3px solid rgb(238, 201, 201);
 }
 
-.content{
-  padding: 2rem; 
+@media (min-width: 700px) {
+@keyframes conanimation {
+  0% {background-color: rgba(172, 104, 104, 0.836)}
+
+  40% {background-color: rgba(126, 33, 50, 0.61);}
+  }
+}
+.content {
+  padding: 2rem;
   background-color: hsl(0, 10%, 54%);
   font-size: medium;
-  color: white;
-}
-
-@media (max-width: 650px){
-.content{
-background-image: 
-url(https://images.unsplash.com/photo-1518128160709-c575457dafa5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
-background-color: rgb(0, 0, 0);
-background-repeat: repeat-y;
-}
+  color: rgb(248, 239, 239);
+  animation-name: conanimation;
+  animation-duration: 5s;
+  animation-iteration-count: initial;
+  animation-timing-function: ease-in;
 }
 
 footer {
   background-color: #343330;
   text-align: center;
 }
-

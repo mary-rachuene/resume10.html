@@ -8,34 +8,42 @@
 </head>
 
 <style>
-body {
-display: grid;
-      grid-template-areas: 
-        "header header header"
-        "navigationmenu"
-        "footer footer footer";
+   body {
+      display: grid;
+      grid-template-areas:
+         "header header header"
+         "navigationmenu"
+         "footer footer footer";
       grid-template-rows: 60px 1fr 60px;
       grid-template-columns: 20% 1fr 15%;
       grid-gap: 10px;
       height: 100vh;
       margin: 0;
-      }
-    header, footer, content, Nav {
+   }
+
+   header,
+   footer,
+   content,
+   Nav {
       padding: 20px;
-    }
-    #pageHeader {
+   }
+
+   #pageHeader {
       grid-area: header;
-    }
-    #pageFooter {
+   }
+
+   #pageFooter {
       grid-area: footer;
-    }
-    #bottom { 
-      grid-area: content;      
-      }
-    #MainNavigation { 
-      grid-area: nav; 
-      }
-   </style> 
+   }
+
+   #bottom {
+      grid-area: content;
+   }
+
+   #MainNavigation {
+      grid-area: nav;
+   }
+</style>
 </body>
 
 </html>
@@ -45,7 +53,7 @@ display: grid;
 
    <title>Resume1</title>
 
-   <link rel="stylesheet" type="text/css" href="stylesheet.css">
+   <link rel="stylesheet" type="text/css" href="css.animationLogo.css">
 
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -54,14 +62,14 @@ display: grid;
 
 <body>
    <header id="pageHeader">
-      <picture>
 
-         <source srcset="prince-akachi-small" - media="(max-width: 600px)">
-         <source srcset="prince-akachi-medium" media="(max-width: 1500px)">
-         <source srcset="prince-akachi">
-         <img src="prince-akachi.jpg" alt="headphoto" id="headshot">
+      <picture>
+         <source srcset="./prince-akachi-medium.jpg" media="(min-width: 600px)">
+         <source srcset="./prince-akachi.jpg" media="(min-width: 1000px)">
+         <img src="./prince-akach-small.jpg" alt="headphoto" id="headshot">
       </picture>
-      <h1>Mary Rachuene</h1>
+
+      <h1 class="header">Mary Rachuene</h1>
 
       <p>An introductory statement</p>
 
@@ -143,7 +151,7 @@ display: grid;
 
 <footer id="pageFooter">Footer
    <ul>
-      <h2 style="color:rgb(255, 254, 254)">Contact Details</h2>
+      <h2>Contact Details</h2>
       <a href="https://web.facebook.com/mary.rachuene.1" target="_blank">
          <img class="icons" src="./Popular-facebook-Logo-png - Copy.png" alt="facebook-logo" width="70" height="auto">
       </a>
@@ -155,7 +163,7 @@ display: grid;
       </a>
 
       <a href="https://mail.google.com/mail/u/0/" target="_blank">
-         <img class="icons" src="Gmail-logo-design-on-transparent-background-PNG.png" alt="gmail-logo" width="70" height="76">
+         <img class="icons" src="./logo-gmail-png.png" alt="gmail-logo" width="70" height="76">
       </a>
 
    </ul>
