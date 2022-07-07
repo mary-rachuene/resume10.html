@@ -2,21 +2,20 @@
   margin: 0%;
   width: 100%;
   border: 2px solid rgb(94, 92, 92);
-  display: grid;
+  /* display: grid; */
   color: rgb(136, 99, 99);
-  grid-template-rows: 22% 12% 8% auto 35% 8% 5%;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas:
+  /* grid-template-rows: 22% 12% 8% auto 35% 8% 5%; */
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* grid-template-areas:
     "headerdiv headerdiv headerdiv"
     "div1 div1 div1"
     "div2 div2 div2"
-    "container container container"
+    "container"
     "carouselExampleIndicators"
-    "div4 div4 div4";
+    "div4 div4 div4"; */
 }
 
-
-@media screen and (max-width: 1000px) {
+/* @media screen and (max-width: 1000px) {
   .main {
     grid-template-rows: 22% 12% 8% auto 35% 8% 7%;
     grid-template-columns: 100%;
@@ -29,7 +28,7 @@
       "carouselExampleIndicators"
       "div4";
   }
-}
+} */
 
 .headerdiv {
   grid-column: 1/4;
@@ -50,55 +49,25 @@ header {
   width: 100%;
   height: 450px;
   background-color: #9b9797;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 130%;
   color: rgb(26, 25, 25);
   padding: 15%;
 }
 
-.div0 {
-  width: 100%;
-  height: auto;
-  padding: 6px;
-  grid-column: 1/4;
-  display: flex;
-  background-color: hsl(0, 10%, 54%);
-  align-items: center;
-}
-
-@media screen and (max-width: 600px) {
-  .div0 {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-}
-
 .about {
+  display: flex;
+  margin: 4px auto;
+  width: 70%;
+  align-items: center;
   text-align: left;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: white;
-  display: block;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-#headshot {}
-
-.div1 {
-  background-color: rgb(211, 158, 154);
-  padding: 1rem;
-  font-size: medium;
-  width: auto;
-  grid-column: 1/4;
-  animation-name: navanimation;
-  animation-duration: 60s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-}
-
-.navigationlist {
-  list-style-type: none;
-  padding: 0%;
-  font-style: bold;
+.rounded-image {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
 }
 
 .div2 {
@@ -110,60 +79,51 @@ header {
   grid-column: 1/4;
 }
 
-.container {
-  width: 100%;
-  padding: 3%;
-  margin: 2px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  text-align: justify;
-}
-
-#education1 {}
-
-#education2 {}
-
-#education3 {}
-
 
 .div3 {
-  width: 200px;
-  background-color: rgba(238, 231, 231, 0);
-  grid-column: 1/4;
+  width: 400px;
+  margin: 5px auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-fieldset {
-  margin: 1em 0;
-  padding: 1em 2em;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 90%;
-  border: solid 1px;
-  width: 300px;
-  align-content: center;
-}
-
-legend{
-  
-  font-size: 1.25em;
-  padding: 0.25em;
-  color: black;
-}
-
-input{
-  padding: 0.07em;
-  border: solid 1px rgb(24, 22, 22);
-}
-
-input[type="submit"]{
-  padding: .5em 1em;
-background-color: rgb(211, 14, 14);
-color: white;
-font-family: Georgia, 'Times New Roman', Times, serif;
-font-size: .8em;
-}
 
 .div4 {
   background-color: #343330;
   text-align: center;
   color: white;
   grid-column: 1/4;
+}
+
+.container {
+  width: 400px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 5px auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exp-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.exp-column {
+  padding: 10px;
+}
+
+#experience {
+  text-align: center;
+}
+
+#portfoliocarousel{
+  height: 50vh;
+  min-height: 100px;
+  background: no-repeat scroll center scroll;
 }
