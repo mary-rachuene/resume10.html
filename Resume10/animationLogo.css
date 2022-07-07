@@ -123,7 +123,16 @@ header {
 }
 
 #portfoliocarousel{
-  height: 50vh;
-  min-height: 100px;
-  background: no-repeat scroll center scroll;
+  width: 40%;
+  height: 60vh;
+  min-height: 80px;
+  align-items: center;
+  background:repeat scroll center scroll;
+  background-color: #fff;
+}
+
+  @media screen and (max-width: 600px) {
+    #portfoliocarousel{
+     height: 27vh;
+    }
 }
