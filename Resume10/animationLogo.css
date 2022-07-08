@@ -91,11 +91,11 @@ header {
 .div3 {
   width: 400px;
   margin: 5px auto;
-  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
