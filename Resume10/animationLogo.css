@@ -1,9 +1,13 @@
+.main-header{
+ font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .main {
   margin: 0%;
   width: 100%;
   border: 2px solid rgb(94, 92, 92);
-  /* display: grid; */
   color: rgb(136, 99, 99);
+  /* display: grid; */
   /* grid-template-rows: 22% 12% 8% auto 35% 8% 5%; */
   /* grid-template-columns: repeat(3, 1fr); */
   /* grid-template-areas:
@@ -133,9 +137,8 @@ header {
   text-align: center;
 }
 
-#carouselheader{
+#my-work{
   text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .modal-container {
