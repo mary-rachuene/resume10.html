@@ -80,7 +80,6 @@ header {
   grid-column: 1/4;
 }
 
-
 .form-container {
   width: 400px;
   margin: 5px auto;
@@ -93,10 +92,14 @@ header {
 
 
 .footer-container {
-  background-color: #343330;
+  background-color:  rgb(136, 99, 99);
   text-align: center;
+  padding-top: 4px;
+  padding-bottom: 3px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   color: white;
-  grid-column: 1/4;
+  width: 100%;
+  height: 23%;
 }
 
 @media screen and (max-width: 600px) {
