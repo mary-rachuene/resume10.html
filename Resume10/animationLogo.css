@@ -30,7 +30,7 @@
   }
 } */
 
-.headerdiv {
+.main-header {
   grid-column: 1/4;
   border-bottom: #ffff;
   border-right: 2px;
@@ -41,7 +41,7 @@ header {
   justify-content: center;
 }
 
-#pageheader {
+#page-header {
   background-image: url(../Resume10/mary-largest.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -71,7 +71,7 @@ header {
   border-radius: 50%;
 }
 
-.div2 {
+.experience-container{
   padding: 2rem;
   font-family: Verdana;
   background-color: hsl(0, 10%, 54%);
@@ -81,7 +81,7 @@ header {
 }
 
 
-.div3 {
+.form-container {
   width: 400px;
   margin: 5px auto;
   display: flex;
@@ -92,7 +92,7 @@ header {
 }
 
 
-.div4 {
+.footer-container {
   background-color: #343330;
   text-align: center;
   color: white;
@@ -100,7 +100,7 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-  .div4 {
+  .footer-container {
     display: flex;
     flex-direction: column;
   }
@@ -130,4 +130,11 @@ header {
   text-align: center;
 }
 
+#carouselheader{
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
+.modal-container {
+padding: 4px 4px 4px 4px;
+}
